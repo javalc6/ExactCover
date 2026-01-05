@@ -1,15 +1,12 @@
 # Introduction
-PolyominoApp is a Swing application designed to solve and visualize polyominoes tiling.\
+PolyominoApp is a simple java Swing application designed to solve and visualize polyominoes tiling.\
 [Polyominoes](https://en.wikipedia.org/wiki/Polyomino) are planar polyforms whose cells are squares.
 
 An interesting problem related to polyominoes is the rectangle tiling, an exact cover problem that can be solved efficiently by Donald Knuth's [Dancing Links (DLX) algorithm](https://arxiv.org/abs/cs/0011047).
 
 # Running PolyominoApp
-Run following commands to build the java application:
-```
-javac PolyominoApp.java
-java PolyominoApp
-```
+Just run [ant](https://ant.apache.org/) to build and run PolyominoApp application.
+
 # Features
 On the left panel, users can:
 

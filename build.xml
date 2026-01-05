@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Maze" default="run" basedir=".">
+
+    <property name="src.dir" value="src"/>
+    <property name="build.dir" value="classes"/>
+
+    <target name="clean">
+        <delete dir="${build.dir}"/>
+    </target>
+
+    <target name="compile">
+        <mkdir dir="${build.dir}"/>
+        <javac srcdir="${src.dir}"
+               destdir="${build.dir}"
+               includeantruntime="false"
+               debug="true">
+        </javac>
+    </target>
+
+    <target name="run" depends="compile">
+        <java classname="PolyominoApp" fork="true">
+            <classpath>
+                <pathelement path="${build.dir}"/>
+            </classpath>
+        </java>
+    </target>
+</project>
