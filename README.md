@@ -8,7 +8,7 @@ An interesting problem related to polyominoes is the rectangle tiling, an exact 
 Just run [ant](https://ant.apache.org/) to build and run PolyominoApp application.
 
 # Benchmarking different algorithms
-Two algorithms are available, DLX implemented by *DLXPolyominoSolver* and recursion with pruning impossible holes early implemented by *PolyominoSolver*.
+Two algorithms are available, DLX implemented by *DLXPolyominoSolver* and recursion implemented by *PolyominoSolver* using try "harder" pieces before and prune impossible holes early heuristics.
 
 Executing the command ``java -cp classes PolyominoApp -benchmark`` may provide the following output running on CPU AMD Ryzen 7 8845HS:
 
