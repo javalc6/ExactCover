@@ -14,14 +14,14 @@ Executing the command ``java -cp classes PolyominoApp -benchmark`` may provide t
 
 ```
 Benchmarking DLXPolyominoSolver.solve()
-....
-Average solver time: 3.6526 ms
-Max solver time: 4.9984 ms
+....................................
+Average solver time: 1.7291736111111113 ms
+Max solver time: 19.2862 ms
 ----------------------
 Benchmarking PolyominoSolver.solve()
-...
-Average solver time: 2747.555933333333 ms
-Max solver time: 8198.0437 ms
+....................................
+Average solver time: 3.5691394444444446 ms
+Max solver time: 114.9226 ms
 ```
 
 # App features
