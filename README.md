@@ -2,7 +2,8 @@
 **PolyominoApp** is a simple java Swing application designed to solve and visualize polyominoes tiling.\
 [Polyominoes](https://en.wikipedia.org/wiki/Polyomino) are planar polyforms whose cells are squares.
 
-An interesting problem related to polyominoes is the rectangle tiling, an exact cover problem that can be solved efficiently by Donald Knuth's [Dancing Links (DLX) algorithm](https://arxiv.org/abs/cs/0011047).
+An interesting problem related to polyominoes is the rectangle tiling, an exact cover problem that can be solved efficiently by Donald Knuth's [Dancing Links (DLX) algorithm](https://arxiv.org/abs/cs/0011047). The application can solve this problem either using DLX or ordinary backtracking (slower). 
+Before invoking the solver, PolyominoApp performs a preliminary check to determine whether an exact cover could potentially exist. If the board area cannot be computed as n1\*size1+n2\*size2+... no solution exists. This check prevents wasting time on cases where a solution is clearly impossible.
 
 # Running PolyominoApp
 Just run [ant](https://ant.apache.org/) to build and run PolyominoApp application.
@@ -34,7 +35,7 @@ for (Polyomino polyomino: testPolyominoes)
 int[][] solved = DLXPolyominoSolver.solve(new int[rows][cols], selectedShapes);
 ```
 
-# App features
+# PolyominoApp features
 On the left panel, users can:
 
 ♦ Set the board size effortlessly using spin controls for rows and columns. \
