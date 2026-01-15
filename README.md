@@ -24,6 +24,16 @@ Average solver time: 3.5691394444444446 ms
 Max solver time: 114.9226 ms
 ```
 
+# Usage from other java apps
+You have to provide a list of polyominoes as *ArrayList* of shapes stored as *boolean*[][], call either *DLXPolyominoSolver.solve* or *PolyominoSolver.solve*. Both methods are static.
+```java
+final List<boolean[][]> selectedShapes = new ArrayList<>();
+final Polyomino[] testPolyominoes = {T4, S4, F5, L5, N5, P5, T5, U5, V5, W5, X5, Y5, Z5};
+for (Polyomino polyomino: testPolyominoes)
+	selectedShapes.add(polyomino.shape);
+int[][] solved = DLXPolyominoSolver.solve(new int[rows][cols], selectedShapes);
+```
+
 # App features
 On the left panel, users can:
 
